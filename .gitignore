@@ -29,3 +29,5 @@ coverage
 demo
 dist
 test
+index.html
+jsconfig.json

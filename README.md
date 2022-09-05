@@ -18,7 +18,7 @@ npm i @ctechhindi/vue3-progress-bar
 
 ```js
 // Load
-import Vue3ProgressBar from "vue3-progress-bar";
+import Vue3ProgressBar from "@ctechhindi/vue3-progress-bar";
 app.use(Vue3ProgressBar, {
   // "height": "5px",
   // "customStyle": {
