@@ -4,6 +4,14 @@ A infinite progress bar for vue 3
 
 - [GitHub](https://github.com/ctechhindi/Vue3-Progress-Bar)
 
+## Installation
+
+### npm
+
+```
+npm i @ctechhindi/vue3-progress-bar
+```
+
 ## Usage
 
 **`main.js`**

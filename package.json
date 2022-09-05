@@ -1,9 +1,9 @@
 {
-  "name": "vue3-progress-bar",
+  "name": "@ctechhindi/vue3-progress-bar",
   "version": "1.0.0",
   "description": "A infinite progress bar for vue 3",
   "homepage": "https://github.com/ctechhindi/Vue3-Progress-Bar",
-  "email" : "ctechhindi@gmail.com",
+  "email": "ctechhindi@gmail.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ctechhindi/Vue3-Progress-Bar.git"
