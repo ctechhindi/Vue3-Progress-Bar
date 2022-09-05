@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "A infinite progress bar for vue 3",
   "homepage": "https://github.com/ctechhindi/Vue3-Progress-Bar",
+  "bugs": "https://github.com/ctechhindi/Vue3-Progress-Bar/issues",
   "email": "ctechhindi@gmail.com",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ctechhindi/Vue3-Progress-Bar.git"
@@ -11,7 +13,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4173",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "vue3",
@@ -19,7 +22,7 @@
   ],
   "author": "Jeevan Lal",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
     "vite": "^3.0.9",
     "vue": "^3.2.38",
