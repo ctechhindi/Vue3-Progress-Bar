@@ -5,37 +5,18 @@
 </template>
 
 <script>
-import cthBus from "./cthBus";
-
+import { inject } from "vue";
 export default {
   name: "Vue3ProgressBar",
-  data() {
+  setup() {
+    let bar = inject("VUE3_PROGRESS_BAR_DATA");
+    let customStyle = "";
+    if (bar.options.customStyle) customStyle = bar.options.customStyle;
+    let styleBar = bar.styleBar;
     return {
-      customStyle: "",
-      styleBar: {
-        height: "5px",
-        display: "none",
-      },
+      customStyle,
+      styleBar,
     };
-  },
-  created() {
-    cthBus.setEventHandlers({
-      start: () => {
-        this.styleBar.display = "block";
-      },
-      finish: () => {
-        this.styleBar.display = "none";
-      },
-      customization: (options) => {
-        this.modifyBar(options);
-      },
-    });
-  },
-  methods: {
-    modifyBar(options) {
-      if (options.height) this.styleBar.height = options.height
-      if (options.customStyle) this.customStyle = options.customStyle
-    },
   },
 };
 </script>

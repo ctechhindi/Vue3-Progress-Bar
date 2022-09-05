@@ -1,22 +1,35 @@
-"use strict";
-
+import { reactive } from 'vue';
 import Vue3ProgressBar from "./vue3-progress-bar.vue";
-import cthBus from "./cthBus";
 
 function install(app, options = {}) {
+
+  // Default Bar Style
+  let styleBar = {
+    height: "10px",
+    display: "none",
+  };
+
+  // Bar Height
+  if (options.height) styleBar.height = options.height;
+
   let progress = {
     start: () => {
-      cthBus.__start();
+      VUE3_PROGRESS_BAR_DATA.styleBar.display = "block";
     },
     finish: () => {
-      cthBus.__finish();
+      VUE3_PROGRESS_BAR_DATA.styleBar.display = "none";
     },
   };
 
-  cthBus.__customization(options);
+  const VUE3_PROGRESS_BAR_DATA = reactive({
+    styleBar: styleBar,
+    options: options
+  });
+
   // Vue Component
-  app.component("Vue3ProgressBar", Vue3ProgressBar);
+  app.provide('VUE3_PROGRESS_BAR_DATA', VUE3_PROGRESS_BAR_DATA);
   app.provide('progress', progress)
+  app.component("Vue3ProgressBar", Vue3ProgressBar);
 }
 
 export default { install };
