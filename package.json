@@ -1,6 +1,6 @@
 {
   "name": "@ctechhindi/vue3-progress-bar",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A infinite progress bar for vue 3",
   "homepage": "https://github.com/ctechhindi/Vue3-Progress-Bar",
   "bugs": "https://github.com/ctechhindi/Vue3-Progress-Bar/issues",
@@ -19,7 +19,9 @@
   },
   "keywords": [
     "vue3",
-    "progress-bar"
+    "progress-bar",
+    "progress bar",
+    "vue"
   ],
   "author": "Jeevan Lal",
   "license": "MIT",

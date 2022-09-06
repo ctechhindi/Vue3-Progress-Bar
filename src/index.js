@@ -29,6 +29,7 @@ function install(app, options = {}) {
   // Vue Component
   app.provide('VUE3_PROGRESS_BAR_DATA', VUE3_PROGRESS_BAR_DATA);
   app.provide('progress', progress)
+  app.config.globalProperties.$progress = progress;
   app.component("Vue3ProgressBar", Vue3ProgressBar);
 }
 
