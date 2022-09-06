@@ -8,6 +8,7 @@
 
 > A infinite progress bar for vue 3
 
+- [Demo](https://vue3-progress-bar.netlify.app/)
 - [GitHub](https://github.com/ctechhindi/Vue3-Progress-Bar)
 
 ## Requirements
