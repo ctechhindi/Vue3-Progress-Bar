@@ -27,6 +27,7 @@ coverage
 *.sw?
 
 demo
+dist
 test
 index.html
 jsconfig.json
